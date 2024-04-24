@@ -13,7 +13,7 @@ mongodb.initDb = (error) => {
         console.log(error);
     } else {
         app.listen(port, () =>{
-            console.log(`Database is listening and node is working in port: ${port}`);
+            console.log(`Database is listening and node is working in port number: ${port}`);
         })
     }
 
