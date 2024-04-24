@@ -1,7 +1,7 @@
 const dotEnv = require('dotenv');
-dotEnv.config;
+dotEnv.config();
 const mongodb = require('mongodb');
-const MongoClient = mongodb.MongoClient;
+const mongoClient = mongodb.MongoClient;
 
 let dataBase;
 
@@ -10,12 +10,14 @@ const initDb = (callback) => {
         console.log('Database has been initialized!');
         return callback(null, dataBase);
     }
-    MongoClient.connect(process.env.mongoDb_URL).then((client) => {
-        dataBase = client;
-        callback(null, dataBase);
-    }).catch((error) => {
-        callback(error);
-    });
+    mongoClient.connect(process.env.mongoDb_URL)
+        .then((client) => {
+            dataBase = client;
+            callback(null, dataBase);
+        })
+        .catch((error) => {
+            callback(error);
+        });
 };
 
 const getDb = () => {
@@ -25,4 +27,4 @@ const getDb = () => {
     return dataBase;
 };
 
-module.exports = {initDb, getDb };
+module.exports = {initDb, getDb};

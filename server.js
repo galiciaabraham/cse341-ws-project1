@@ -5,17 +5,16 @@ const route = require('./routes');
 
 const mongodb = require('./model/dbConnection');
 
-
 app.use('/', route);
+console.log('OK');
 
-mongodb.initDb = (error) => {
+mongodb.initDb((error) => {
     if(error){
         console.log(error);
     } else {
         app.listen(port, () =>{
-            console.log(`Database is listening and node is working in port number: ${port}`);
+            console.log(`Data base is connected and node app is listening on port: ${port}`)
         })
     }
-
-}
+})
 
