@@ -1,0 +1,4 @@
+#You can use this URL to test getAll query
+https://cse341-ws-project1.onrender.com/contact/
+#You can use this URL to test the get query for individual contact id's
+https://cse341-ws-project1.onrender.com/contact/662869ec512fc10982433519
