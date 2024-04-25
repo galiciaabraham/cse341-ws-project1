@@ -2,11 +2,12 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 8050;
 const route = require('./routes');
+const contactsRoute = require('./routes/contactsRoute');
 
 const mongodb = require('./model/dbConnection');
 
 app.use('/', route);
-console.log('OK');
+app.use('/contact', contactsRoute);
 
 mongodb.initDb((error) => {
     if(error){
