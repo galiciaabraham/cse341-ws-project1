@@ -10,12 +10,11 @@ app.use('/', route);
 app.use('/contact', contactsRoute);
 
 mongodb.initDb((error) => {
-    if(error){
-        console.log(error);
-    } else {
-        app.listen(port, () =>{
-            console.log(`Data base is connected and node app is listening on port: ${port}`)
-        })
-    }
-})
-
+  if (error) {
+    console.log(error);
+  } else {
+    app.listen(port, () => {
+      console.log(`Data base is connected and node app is listening on port: ${port}`);
+    });
+  }
+});
