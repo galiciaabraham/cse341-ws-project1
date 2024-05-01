@@ -5,10 +5,10 @@
     "description": "Here you can find the documentation for my contacts API created using Swagger",
     "version": "1.0.0"
   },
-  "host": "https://cse341-ws-project1.onrender.com/",
+  "host": "cse341-ws-project1.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/contact/": {
@@ -20,7 +20,11 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Failed"
           }
+          
         }
       }
     },
@@ -41,6 +45,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Failed"
           }
         }
       }
@@ -80,6 +87,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Failed"
           }
         }
       }

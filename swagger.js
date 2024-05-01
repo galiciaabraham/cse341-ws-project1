@@ -5,7 +5,7 @@ const doc = {
     title: 'Contacts API CSE341 - Abraham Galicia',
     description: 'Here you can find the documentation for my contacts API created using Swagger'
   },
-  host: 'https://cse341-ws-project1.onrender.com/'
+  host: 'https://cse341-ws-project1.onrender.com'
 };
 
 const outputFile = './swagger.json';
