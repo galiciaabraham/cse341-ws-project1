@@ -1,11 +1,17 @@
 #You can use this URL to test getAll query
 https://cse341-ws-project1.onrender.com/contact/
+or
+http://localhost:8050/contact/
 
 #You can use this URL to test the get query for individual contact id's
 https://cse341-ws-project1.onrender.com/contact/662869ec512fc10982433519
+or
+http://localhost:8050/contact/662869ec512fc10982433519
 
 #You can use this route to test a POST route to add a new contact.
 https://cse341-ws-project1.onrender.com/contact/new-contact
+or
+http://localhost:8050/contact/new-contact
 {
     "firstName": "Ron",
     "lastName": "Skywalker",
@@ -16,6 +22,8 @@ https://cse341-ws-project1.onrender.com/contact/new-contact
 
 #You can use this route to test a PUT route to update an existing contact.
 https://cse341-ws-project1.onrender.com/contact/update-contact/6632673a1f99681c60fcd62b
+or 
+http://localhost:8050/contact/update-contact/6632673a1f99681c60fcd62b
 {
     "firstName": "Richard",
     "lastName": "Patterson",
@@ -26,3 +34,5 @@ https://cse341-ws-project1.onrender.com/contact/update-contact/6632673a1f99681c6
 
 #You can use this route to test a DELETE route to delete an existing contact.
 https://cse341-ws-project1.onrender.com/contact/delete-contact/662869ec512fc10982433519
+or
+http://localhost:8050/contact/delete-contact/662869ec512fc10982433519
