@@ -1,4 +1,17 @@
 #You can use this URL to test getAll query
 https://cse341-ws-project1.onrender.com/contact/
+
 #You can use this URL to test the get query for individual contact id's
 https://cse341-ws-project1.onrender.com/contact/662869ec512fc10982433519
+
+#You can use this route to test a POST route to add a new contact.
+http://localhost:8050/contact/new-contact
+{
+    "firstName": "Samuel",
+    "lastName": "Robertson",
+    "email": "robs@gmail.com",
+    "favoriteColor": "yellow",
+    "birthday": 825112586
+  }
+
+#You can use this route to test a PUT route to update an existing contact.

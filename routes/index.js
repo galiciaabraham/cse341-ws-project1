@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const contactsRoute = require('./contactsRoute');
 
 router.get('/', (req, res) => {
-  res.send('Hello! This message means the API is up and running');
+  res.send('API Documentation');
 });
+router.use('/contact', contactsRoute);
 
 module.exports = router;

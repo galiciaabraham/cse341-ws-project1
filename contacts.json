@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "662869ec512fc10982433519",
+    "firstName": "Julia",
+    "lastName": "Martin",
+    "email": "julim@hotmail.com",
+    "favoriteColor": "green",
+    "birthday": -94435200000
+  },
+  {
+    "_id": "66286a27512fc1098243351a",
+    "firstName": "Karina",
+    "lastName": "Galindo",
+    "email": "pagamo@gmail.com",
+    "favoriteColor": "purple",
+    "birthday": 913680000000
+  },
+  {
+    "_id": "66286a3b512fc1098243351b",
+    "firstName": "Isaac",
+    "lastName": "Durham",
+    "email": "idur@icloud.com",
+    "favoriteColor": "red",
+    "birthday": 746496000000
+  }
+]
