@@ -5,7 +5,7 @@ https://cse341-ws-project1.onrender.com/contact/
 https://cse341-ws-project1.onrender.com/contact/662869ec512fc10982433519
 
 #You can use this route to test a POST route to add a new contact.
-http://localhost:8050/contact/new-contact
+https://cse341-ws-project1.onrender.com/contact/new-contact
 {
     "firstName": "Ron",
     "lastName": "Skywalker",
@@ -15,7 +15,7 @@ http://localhost:8050/contact/new-contact
   }
 
 #You can use this route to test a PUT route to update an existing contact.
-http://localhost:8050/contact/update-contact/6632673a1f99681c60fcd62b
+https://cse341-ws-project1.onrender.com/contact/update-contact/6632673a1f99681c60fcd62b
 {
     "firstName": "Richard",
     "lastName": "Patterson",
@@ -23,3 +23,6 @@ http://localhost:8050/contact/update-contact/6632673a1f99681c60fcd62b
     "favoriteColor": "pink",
     "birthday": 835122586
   }
+
+#You can use this route to test a DELETE route to delete an existing contact.
+https://cse341-ws-project1.onrender.com/contact/delete-contact/662869ec512fc10982433519
