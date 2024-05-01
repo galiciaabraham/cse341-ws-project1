@@ -7,11 +7,19 @@ https://cse341-ws-project1.onrender.com/contact/662869ec512fc10982433519
 #You can use this route to test a POST route to add a new contact.
 http://localhost:8050/contact/new-contact
 {
-    "firstName": "Samuel",
-    "lastName": "Robertson",
-    "email": "robs@gmail.com",
-    "favoriteColor": "yellow",
-    "birthday": 825112586
+    "firstName": "Ron",
+    "lastName": "Skywalker",
+    "email": "ronsky@mymail.com",
+    "favoriteColor": "red",
+    "birthday": 835112586
   }
 
 #You can use this route to test a PUT route to update an existing contact.
+http://localhost:8050/contact/update-contact/6632673a1f99681c60fcd62b
+{
+    "firstName": "Richard",
+    "lastName": "Patterson",
+    "email": "rpn@mail.com",
+    "favoriteColor": "pink",
+    "birthday": 835122586
+  }

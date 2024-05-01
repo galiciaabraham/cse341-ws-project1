@@ -34,7 +34,7 @@ contController.addContact = async (req, res) => {
   if (response.acknowledged) {
     res.setHeader('Content-Type', 'application/json');
     res.status(200);
-    res.send(response.insertedId);
+    res.send(`Created contact ID: ${response.insertedId}`);
   }
   } catch (error) {
     console.log(error);
@@ -53,10 +53,8 @@ contController.updateContact = async (req, res) => {
 
   try {
   const response = await mongodb.getDb().db().collection('contacts').replaceOne({ _id: contactId }, contact);
-  if (response.acknowledged) {
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200);
-    res.send(response.insertedId);
+  if (response.modifiedCount > 0) {
+    res.status(200).send('Status ok: 200');
   }
   } catch (error) {
     console.log(error);
