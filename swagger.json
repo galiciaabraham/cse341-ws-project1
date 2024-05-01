@@ -1,0 +1,151 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Contacts API CSE341 - Abraham Galicia",
+    "description": "Here you can find the documentation for my contacts API created using Swagger",
+    "version": "1.0.0"
+  },
+  "host": "https://cse341-ws-project1.onrender.com/",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/contact/": {
+      "get": {
+        "description": "You can use this get All contacts in the database collection",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/contact/{contactId}": {
+      "get": {
+        "description": "You can use thisget individual contacts by Id, for example: https://cse341-ws-project1.onrender.com/contact/662869ec512fc10982433519 ",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "contactId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/contact/new-contact": {
+      "post": {
+        "description": "You can use this route to test a POST route to add a new contact. (You need to enter the information into the body of the request as a JSON object) -- Birthdays are entered in UNIX timestamp ",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "Hannah"
+                },
+                "lastName": {
+                  "example": "Barbera"
+                },
+                "email": {
+                  "example": "anb@email.com"
+                },
+                "favoriteColor": {
+                  "example": "yellow"
+                },
+                "birthday": {
+                  "example": "835122586"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/contact/update-contact/{contactId}": {
+      "put": {
+        "description": "You can use this route to make a PUT request to update an existing contact. You must specify the contactId  (You need to add the contactId as a parameter of the request for it to identify the contact that will be updated - -- Birthdays are entered in UNIX timestamp",
+        "parameters": [
+          {
+            "name": "contactId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "Hannah"
+                },
+                "lastName": {
+                  "example": "Barbera"
+                },
+                "email": {
+                  "example": "anb@email.com"
+                },
+                "favoriteColor": {
+                  "example": "yellow"
+                },
+                "birthday": {
+                  "example": "835122586"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/contact/delete-contact/{contactId}": {
+      "delete": {
+        "description": "You can use this route to make a DELETE request to remove an existing contact. You must specify the contactId (You need to add the contactId as a parameter of the request for it to identify the contact that will be removed",
+        "parameters": [
+          {
+            "name": "contactId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  }
+}
