@@ -7,16 +7,12 @@
   },
   "host": "cse341-ws-project1.onrender.com",
   "basePath": "/",
-  "schemes": [
-    "https"
-  ],
+  "schemes": ["https"],
   "paths": {
     "/contact/": {
       "get": {
         "description": "You can use this get All contacts in the database collection",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "OK"
@@ -24,16 +20,13 @@
           "500": {
             "description": "Failed"
           }
-          
         }
       }
     },
     "/contact/{contactId}": {
       "get": {
         "description": "You can use thisget individual contacts by Id, for example: https://cse341-ws-project1.onrender.com/contact/662869ec512fc10982433519 ",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "contactId",
@@ -55,9 +48,7 @@
     "/contact/new-contact": {
       "post": {
         "description": "You can use this route to test a POST route to add a new contact. (You need to enter the information into the body of the request as a JSON object) -- Birthdays are entered in UNIX timestamp ",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "body",
